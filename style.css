@@ -88,6 +88,18 @@ nav img{
   transition: 0.5s;
 }
 
+/* ----------QUOTE---------- */
+.quote{
+  width: 80%;
+  margin: auto;
+  min-height: 170px;
+  text-align: center;
+  padding-top: 50px;
+}
+.quote h1{
+  font-size: 36px;
+}
+
 /* ----------DONATE---------- */
 .donate{
   width: 80%;
