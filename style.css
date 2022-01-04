@@ -91,10 +91,10 @@ nav img{
 /* ----------DONATE---------- */
 .donate{
   width: 80%;
-  min-height: 250px;
+  min-height: 170px;
   margin: auto;
   text-align: center;
-  padding-top: 100px;
+  padding-top: 50px;
 }
 .donate h1{
   font-size: 36px;
@@ -131,8 +131,12 @@ nav img{
     border-spacing: 2px;
 
     border: 1px solid grey;
-    width: 600 px;
+    width: 600px;
 }
+.u{
+  height: 30px;
+}
+
 /* ----------ABOUT---------- */
 .about{
   min-height: 600px;
