@@ -1,0 +1,209 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ----------Start page bg---------- */
+.header{
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(pics/doc.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+/* ----------tag - logo---------- */
+nav{
+  display: flex; /*weird flex, but ok*/
+  padding: 2% 6%;
+  align-items: center; /*alligns everything in nav to the center*/
+}
+nav img{
+  width: 150px;
+}
+
+.nav-links{ /*работаем с классом nav-links который в nav*/
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul li{ /*работаем с ul li который в классе nav-links, в nav*/
+  list-style: none;
+  display: inline-block;
+  padding: 8px 20px;
+  position: relative;
+}
+.nav-links ul li a{ /*работаем с a который, в ul li, в классе nav-links, в nav*/
+  /*aka HOME DONATIONS etc*/
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+}
+.nav-links ul li::after{ /**/
+  content: ''; /*создает нужную штуку*/
+  width: 0%;
+  height: 2px; /*высотa 2 пикселя*/
+  background: #507de6;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+  width: 100%;
+}
+
+/* ----------Start page text---------- */
+.text-box{
+  width: 90%;
+  color: #fff;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: left;
+}
+.text-box h1{ /*работаем с h1 который в классe text-box*/
+  font-size: 68px;
+}
+.text-box p{ /*работаем с p который в классe text-box*/
+  margin: 10px 0 40px;
+  font-size: 24px;
+  color: #fff;
+}
+.us-button{
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+.us-button:hover{
+  border: 1px solid #fff;
+  background: #507de6;
+  transition: 0.5s;
+}
+
+/* ----------DONATE---------- */
+.donate{
+  width: 80%;
+  min-height: 250px;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+.donate h1{
+  font-size: 36px;
+  font-weight: 600;
+}
+.donate p{
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+.don_button{
+  display: inline-block;
+  text-decoration: none;
+  color: #000000;
+  border: 1px solid #000000;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+.don_button:hover{
+  color: #fff;
+  border: 1px solid #fff;
+  background: #507de6;
+  transition: 0.5s;
+}
+
+/* ----------Leaderboard---------- */
+.table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+
+    border: 1px solid grey;
+    width: 600 px;
+}
+/* ----------ABOUT---------- */
+.about{
+  min-height: 600px;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(pics/men.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.ab{
+  width: 50%;
+  color: #fff;
+  position: absolute;
+  padding: 5% 5%;
+  text-align: left;
+}
+.ab h1{
+  font-size: 62px;
+}
+.ab p{
+  margin: 10px 0 40px;
+  font-size: 25px;
+  color: #fff;
+}
+.photo{
+  flex: 1;
+  float: right;
+  padding: 8% 10%;
+}
+.photo img {
+  width: 280px;
+  height: auto;
+  border-radius: 50%;
+}
+/* ----------- Contact ----------- */
+.contact{
+  width: 80%;
+  min-height: 60px;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+.text h1{
+  font-size: 22px;
+}
+.buttons{
+  width: 80%;
+  min-height: 60px;
+  margin: auto;
+  text-align: center;
+}
+.buttons ul li{ /*работаем с ul li который в классе nav-links, в nav*/
+  list-style: none;
+  display: inline-block;
+  padding: 8px 8px;
+  position: relative;
+}
+.buttons ul li a{
+  display: inline-block;
+  text-align: center;
+  padding: 12px 12px;
+  background-size: contain;
+  position: relative;
+  cursor: pointer;
+}
+.insta_button{
+  background-image: url(pics/insta.png);
+}
+.face_button{
+  background-image: url(pics/facebook.png);
+}
+.what_button{
+  background-image: url(pics/whatsapp.png);
+}
