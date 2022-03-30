@@ -1,2 +1,3 @@
 # Health-well-Africa
-aitu project
+Project is closed!
+
